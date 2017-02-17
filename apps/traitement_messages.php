@@ -2,8 +2,8 @@
 var_dump($_POST);
 if (isset($_POST['content'], $_POST[$_SESSION['id']]))
 {
-	$comment = $_POST[''];
-	$id_article = $_POST['id_'];
+	$comment = $_POST['content'];
+	$id_article = $_POST['id'];
 
 	if (strlen($comment) > 4095)
 	{
