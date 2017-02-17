@@ -14,7 +14,7 @@ if (isset($_POST['action']))
 	if ($action == "register")
 	{
 		// Etape 1
-		if (isset($_POST['login'], $_POST['birthdate'], $_POST['email'], $_POST['password1'], $_POST['password2']))
+		if (isset($_POST['login'], $_POST['email'], $_POST['password1'], $_POST['password2']))
 		{
 			// Etape 2
 			$login = $_POST['login'];// 31
