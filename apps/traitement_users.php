@@ -18,7 +18,6 @@ if (isset($_POST['action']))
 		{
 			// Etape 2
 			$login = $_POST['login'];// 31
-			$birthdate = $_POST['birthdate'];// date
 			$email = $_POST['email'];// 127
 			$password1 = $_POST['password1'];// 72
 			$password2 = $_POST['password2'];// ~= $password1
@@ -51,9 +50,8 @@ if (isset($_POST['action']))
 			{
 				$login = mysqli_real_escape_string($db, $login);
 				$email = mysqli_real_escape_string($db, $email);
-				$birthdate = mysqli_real_escape_string($db, $birthdate);
 				$hash = password_hash($password1, PASSWORD_BCRYPT, ["cost"=>15]);
-				$res = mysqli_query($db, "INSERT INTO users (email, password, login, birthdate) VALUES('".$email."', '".$hash."', '".$login."', '".$birthdate."')");
+				$res = mysqli_query($db, "INSERT INTO users (email, password, login,) VALUES('".$email."', '".$hash."', '".$login."')");
 				/*                                           |                               |         |                                                       |
 															  nom des colonnes dans phpmyadmin                    nom des variables de la ligne 36 à 39
 				*/
