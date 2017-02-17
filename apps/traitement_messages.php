@@ -1,6 +1,6 @@
 <?php
 var_dump($_POST);
-if (isset($_POST['message'], $_POST['id_author']))
+if (isset($_POST['content'], $_POST[$_SESSION['id']]))
 {
 	$comment = $_POST[''];
 	$id_article = $_POST['id_'];
