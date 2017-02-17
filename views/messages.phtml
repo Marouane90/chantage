@@ -1,0 +1,13 @@
+<div class="article">
+<div>
+	<h1><?=htmlentities($article['title'])?></h1>
+		<p><?=htmlentities($article['content'])?></p>
+		<p><?=$article['date']?></p>
+		<p><?=htmlentities($article['login'])?></p>
+
+</div>
+</div>
+
+<?php
+require('apps/messages.php');
+require('apps/create_message.php');
