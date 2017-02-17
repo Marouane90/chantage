@@ -1,9 +1,8 @@
 <?php
 var_dump($_POST);
-if (isset($_POST['content'], $_POST[$_SESSION['id']]))
+if (isset($_POST['content'], $_SESSION['id']))
 {
 	$comment = $_POST['content'];
-	$id_article = $_POST['id'];
 
 	if (strlen($comment) > 4095)
 	{
@@ -17,12 +16,11 @@ if (isset($_POST['content'], $_POST[$_SESSION['id']]))
 	if (count($errors) == 0)
 	{
 		$comment = mysqli_real_escape_string($db, $comment);
-		$id_article = intval($id_article);
 		$res = mysqli_query($db, "INSERT INTO messages (content, id_author) VALUES('".$comment."', '".$_SESSION['id']."')");
 		if ($res)
 		{
 			// Etape 4
-			header('Location: index.php?page=messages='.$id);
+			header('Location: index.php?page=create_message');
 			exit;
 		}
 		else
