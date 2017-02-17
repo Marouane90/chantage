@@ -1,15 +1,14 @@
 <?php
 $errors = [];
-$db = mysqli_connect("","","","");
+$db = mysqli_connect("192.168.1.62","chantage","chantage","chantage");
 session_start();
-$access = ["articles", "login", "register", "create_article", "edit_article", "article", "comment"];
-$page = "articles";
+$access = [ "login", "register", "create_message", "messages", "message"];
+$page = "messages";
 if (isset($_GET['page']) && in_array($_GET['page'], $access))
 {
     $page = $_GET['page'];
 }
-require('apps/traitement_comments.php');
-require('apps/traitement_articles.php');
+require('apps/traitement_messages.php');
 require('apps/traitement_users.php');
 require('apps/skel.php');
 
