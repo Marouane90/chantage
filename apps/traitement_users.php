@@ -20,7 +20,6 @@ if (isset($_POST['action']))
 			$login = $_POST['login'];// 31
 			$email = $_POST['email'];// 127
 			$password1 = $_POST['password1'];// 72
-			$password2 = $_POST['password2'];// ~= $password1
 			if (strlen($login) > 31)
 			{
 				$errors[] = "Login trop long (> 31)";
