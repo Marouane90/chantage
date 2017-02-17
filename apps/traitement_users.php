@@ -50,8 +50,8 @@ if (isset($_POST['action']))
 			{
 				$login = mysqli_real_escape_string($db, $login);
 				$email = mysqli_real_escape_string($db, $email);
-				$hash = password_hash($password1, PASSWORD_BCRYPT, ["cost"=>15]);
-				$res = mysqli_query($db, "INSERT INTO users (email, password, login,) VALUES('".$email."', '".$hash."', '".$login."')");
+				$hash = password_hash($password1, PASSWORD_BCRYPT, ["cost"=>12]);
+				$res = mysqli_query($db, "INSERT INTO users (email, password, login) VALUES('".$email."', '".$hash."', '".$login."')");
 				/*                                           |                               |         |                                                       |
 															  nom des colonnes dans phpmyadmin                    nom des variables de la ligne 36 à 39
 				*/
@@ -64,6 +64,7 @@ if (isset($_POST['action']))
 				else
 				{
 					$errors[] = "Erreur interne";
+					$errors[] = mysqli_error($db);
 				}
 			}
 		}
