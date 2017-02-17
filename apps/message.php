@@ -1,9 +1,9 @@
 <?php
 
-$res = mysqli_query($db, "SELECT message.*, users.login FROM message, users WHERE users.id=message.id_author");
+$res = mysqli_query($db, "SELECT messages.*, users.login FROM messages, users WHERE users.id=messages.id_author");
 
 while ($comment = mysqli_fetch_assoc($res))
 {
-	require('views/comments.phtml');
+	require('views/messages.phtml');
 }
 ?>

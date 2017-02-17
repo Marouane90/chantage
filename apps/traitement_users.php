@@ -64,7 +64,6 @@ if (isset($_POST['action']))
 				else
 				{
 					$errors[] = "Erreur interne";
-					$errors[] = mysqli_error($db);
 				}
 			}
 		}
@@ -96,7 +95,7 @@ if (isset($_POST['action']))
 							$_SESSION['login'] = $user['login'];
 							$_SESSION['admin'] = $user['admin'];
 							// Etape 4
-							header('Location: index.php?page=articles');
+							header('Location: index.php?page=create_message');
 							exit;
 						}
 						else
@@ -112,6 +111,7 @@ if (isset($_POST['action']))
 				else
 				{
 					$errors[] = "Erreur interne";
+					$errors[] = mysqli_error($db);
 				}
 			}
 		}

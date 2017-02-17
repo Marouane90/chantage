@@ -1,3 +1,3 @@
 <?php
-require('views/create_comments.phtml');
+require('views/create_message.phtml');
 ?>
