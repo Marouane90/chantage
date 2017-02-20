@@ -2,7 +2,7 @@
 $errors = [];
 $db = mysqli_connect("192.168.1.62","chantage","chantage","chantage");
 session_start();
-$access = [ "login", "register", "create_message", "messages"];
+$access = [ "login", "register", "create_message", "messages", "conected"];
 $page = "login";
 if (isset($_GET['page']) && in_array($_GET['page'], $access))
 {

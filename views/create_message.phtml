@@ -5,20 +5,27 @@
 	</header>
 </div>
 <form method="post">
-    <div class="input-group">
-        <input id="btn-input" name="content" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
-        <span class="input-group-btn">
-        <button type ="submit" class="btn btn-invert btn-sm" id="btn-chat">Send</button>
-        </span>
-    </div>
+	<div class="input-group">
+		<input id="btn-input" name="content" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+		<span class="input-group-btn">
+			<button type ="submit" class="btn btn-invert btn-sm" id="btn-chat">Send</button>
+		</span>
+	</div>
 </form>
 
-    <div class="chat">   
-      <div class="chat-history">
-        <ul class="chat-ul">
-	<?php require('apps/messages.php'); ?>
-	</ul>
+<div class="chat">   
+	<div class="chat-history">
+		<ul class="chat-ul">
+			<?php require('apps/messages.php'); ?>
+		</ul>
+	</div>
 </div>
+<div>
+	<p class='aside'>Personnes connectées</p>
+	<ul class="js_msg_user">
+		<?php require ('apps/conected.php'); ?>
+	</ul>
+
 </div>
 <script>
 setInterval(function()
