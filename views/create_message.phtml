@@ -12,6 +12,13 @@
 		</span>
 	</div>
 </form>
+<div>
+	<p class='aside'>Personnes connectées</p>
+	<ul class="js_msg_user">
+		<?php require ('apps/conected.php'); ?>
+	</ul>
+
+</div>
 
 <div class="chat">   
 	<div class="chat-history">
@@ -20,16 +27,12 @@
 		</ul>
 	</div>
 </div>
-<div>
-	<p class='aside'>Personnes connectées</p>
-	<ul class="js_msg_user">
-		<?php require ('apps/conected.php'); ?>
-	</ul>
-
-</div>
 <script>
 setInterval(function()
 {
+	$('.js_msg_user').load('index.php?page=conected&ajax');
 	$('.js_msg_list').load('index.php?page=messages&ajax');
 }, 500);	
 </script>
+
+
