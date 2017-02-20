@@ -74,7 +74,7 @@ h1{
     border-radius: 10px;
     padding: 20px;
     background-color: #E4E4E4;
-
+	border: 1px solid black;
 }
 .article{
     border: 1px solid grey;
