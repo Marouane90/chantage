@@ -1,5 +1,14 @@
-<form method="post">
-	<label for="content">Commentaire</label>
+<!-- <form method="post">
+	<label for="content">Message</label>
 	<textarea class="textarea" name="content" id="content"></textarea>
 	<button type="submit" class="btn btn-default">Envoyer</button>
+</form> -->
+
+<form method="post">
+    <div class="input-group">
+        <input id="btn-input" name="content" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+        <span class="input-group-btn">
+        <button type ="submit" class="btn btn-invert btn-sm" id="btn-chat">Send</button>
+        </span>
+    </div>
 </form>
