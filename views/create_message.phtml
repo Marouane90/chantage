@@ -3,7 +3,11 @@
 	<textarea class="textarea" name="content" id="content"></textarea>
 	<button type="submit" class="btn btn-default">Envoyer</button>
 </form> -->
-
+<div class="article">
+	<header class="top-bar">
+		<h1>Chantage</h1>
+	</header>
+</div>
 <form method="post">
     <div class="input-group">
         <input id="btn-input" name="content" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
@@ -12,3 +16,9 @@
         </span>
     </div>
 </form>
+<div class="js_msg_list">
+	<?php require('apps/messages.php'); ?>
+</div>
+<script>
+	
+</script>
