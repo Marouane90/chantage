@@ -117,4 +117,8 @@ if (isset($_POST['action']))
 		}
 	}
 }
+if (isset($_SESSION["id"]))
+{
+	mysqli_query($db, "UPDATE users SET last=CURRENT_TIMESTAMP WHERE id=".$_SESSION["id"]);
+}
 ?>
