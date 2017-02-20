@@ -5,13 +5,13 @@
 		<img class="img-responsive user-photo" src="<?=$message['avatar']?>">
 	</div>
 	<div class="col-sm-1">
-		<strong><?=$message['login']?></strong>
+		<strong><?=htmlentities($message['login'])?></strong>
 	</div>
 	<div class="col-sm-8 msg_content">
-		<?=$message['content']?>
+		<?=htmlentities($message['content'])?>
 	</div>
 	<div class="col-sm-2">
-		<span class="text-muted"><?=$message['date']?></span>
+		<span class="text-muted"><?=htmlentities($message['date'])?></span>
 	</div>
 </div>
 	<div><hr></div>
