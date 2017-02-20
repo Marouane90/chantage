@@ -53,24 +53,27 @@ button.btn-inverse{
 	border-right-color:#ddd;
 	border-width:8px;
 }*/
-img{
+img {
     width: 100px;
 }
-h1{
-    font-size: 18px;
-    font-family: 'Lobster', cursive;
-    margin-left: 20px; 
-    color: white;
 
+h1 {
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    margin-top: 10px;
+ /*   margin-left: 20px;*/ 
 }
-.top-bar{
+
+.top-bar {
     background-color: #4B5490;
     position: relative;
     overflow: hidden;
     height: 50px;
     border-radius: 10px;
 }
-.conversation{
+
+.conversation {
     border-radius: 10px;
     padding: 20px;
     background-color: #E4E4E4;
@@ -80,12 +83,17 @@ h1{
 	border-right: 2px solid grey;
 	margin: 2px;
 }
-.article{
-    border: 1px solid grey;
+
+.input-group {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.article {
+    border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
-
-
-    
+    text-align: center;
 }
 
