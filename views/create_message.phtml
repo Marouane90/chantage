@@ -20,5 +20,8 @@
 	<?php require('apps/messages.php'); ?>
 </div>
 <script>
-	
+setInterval(function()
+{
+	$('.js_msg_list').load('index.php?page=messages&ajax');
+}, 500);	
 </script>
