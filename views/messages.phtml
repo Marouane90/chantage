@@ -2,12 +2,12 @@
 
 <div class="row message">
 	<div class="col-sm-1">
-		<img class="img-responsive user-photo" src="<?=$message['avatar']?>">
+		<img class="img-responsive user-photo" src="<?=htmlentities($message['avatar'])?>">
 	</div>
-	<div class="col-sm-1">
+	<div class="col-sm-2">
 		<strong><?=htmlentities($message['login'])?></strong>
 	</div>
-	<div class="col-sm-8 msg_content">
+	<div class="col-sm-7 msg_content">
 		<?=htmlentities($message['content'])?>
 	</div>
 	<div class="col-sm-2">

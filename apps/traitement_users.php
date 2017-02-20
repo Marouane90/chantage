@@ -21,9 +21,9 @@ if (isset($_POST['action']))
 			$email = $_POST['email'];// 127
 			$password1 = $_POST['password1'];// 72
 			$password2 = $_POST['password2'];// ~= $password1
-			if (strlen($login) > 10)
+			if (strlen($login) > 12)
 			{
-				$errors[] = "Login trop long (> 10)";
+				$errors[] = "Login trop long (> 12)";
 			}
 			else if (strlen($login) < 2)
 			{
