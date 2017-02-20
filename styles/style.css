@@ -50,16 +50,27 @@ hr {
 }
 
 .conected {
-	/*width: 50px;*/
+/*	width: 50px;
 	height: 50px;
 	display: inline-block;
 	margin:5px;
+	text-align: center;*/
+	display: inline-block; 
+	height: 50px; 
+	width: 50px; 
+	text-align: center; /* On centre l'image dans le div */ 
+	overflow: hidden; /* Cache les choses qui dépassent du div */ 
+	border: 2px solid black; 
+	margin: 0 auto; 
+	margin: 5px; 
 }
 
 .conected img {
-	width: 50px;
+	/*width: 50px;*/
+	width: 100%; /*height: auto;*/ 
+	vertical-align: middle; 
 }
 
-.conected p {
-	display: block;
+.conected_2{
+	display: inline-block;
 }
