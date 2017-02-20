@@ -1,7 +1,7 @@
 <div class="conversation">
-		<img src="<?=htmlentities($message['avatar'])?>">
-		<p><?=htmlentities($message['login'])?></p>
-		<?=$message['date']?>
+		<p><img src="<?=htmlentities($message['avatar'])?>"></p>
+		<?=htmlentities($message['login'])?>
+		<p><?=$message['date']?></p>
 	
 		<p><?=htmlentities($message['content'])?></p>
 </div>
