@@ -69,8 +69,10 @@ hr {
 	/*width: 50px;*/
 	width: 100%; /*height: auto;*/ 
 	vertical-align: middle; 
+	text-align: center;
 }
 
 .conected_2{
 	display: inline-block;
+	text-align: center;
 }
